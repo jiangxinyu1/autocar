@@ -45,7 +45,7 @@
     <!-- prius -->
   <param name="robot_description" textfile="$(find prius_description)/urdf/prius.urdf"/>
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"  output="screen"  
-    args="-param robot_description -urdf -x -200 -y -15 -z 0.5 -model prius"/>
+    args="-param robot_description -urdf -x 0 -y 0 -z 0.5 -model prius"/>
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find car_demo)/rviz/demo.rviz" required="true" />
 
   <!-- agent_0 -->
